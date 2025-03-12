@@ -1,0 +1,159 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background: #ffd39d;
+    color: #010313;
+}
+
+
+header {
+    background: #421902;
+    color: rgba(240, 237, 233, 0.87);
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: rgb(200, 102, 17);
+    text-decoration: none;
+}
+
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+
+nav ul li a:hover {
+    color: rgb(244, 245, 245);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: fadeIn 2s ease-in;
+}
+.fade-in-image {
+    width: 40%;
+    height: auto; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+    animation: fadeIn 2s ease-in; 
+    justify-content: center;
+}
+
+.fade-in-image:hover {
+    opacity: 1; 
+}
+.div1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.div1 img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+}
+
